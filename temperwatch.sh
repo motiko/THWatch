@@ -1,6 +1,6 @@
 #!/bin/bash
 . /opt/temper/float.sh
-RECIEPENTS="indeecjo@gmail.com raz.kron@gmail.com shmuel777@gmail.com"
+RECIEPENTS=""
 SENDMAIL=true
 TRY=0
 cd /opt/temper
