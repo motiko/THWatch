@@ -1,0 +1,21 @@
+#!/usr/bin/gnuplot
+reset
+set terminal png size 800,1200
+set multiplot layout 2,1
+
+set xdata time
+set timefmt "%H:%M"
+set format x "%H:%M"
+set xlabel "Time"
+
+set ylabel "Temperature"
+set yrange [10:30]
+
+set title "Temperature"
+
+plot "DAY" using 1:2 smooth bezier title "Temperature" with lines
+set title "Humidity"
+set ylabel "Humidity"
+set yrange [20:80]
+plot "DAY" using 1:3 smooth bezier title "Humidity" with lines
+
